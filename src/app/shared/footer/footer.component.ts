@@ -12,7 +12,6 @@ export class FooterComponent {
   constructor(){
     this.sendDate.setMonth(this.sendDate.getMonth());
     this.formattedDate=this.sendDate.toISOString().slice(0,4);
-console.log(this.formattedDate);
   }
 
 }

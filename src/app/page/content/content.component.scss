@@ -4,13 +4,15 @@
 }
 
 .skeleton-card {
+  margin-top: 2rem;
   width: 30%;
-  height: 150px;
-  background-color: #e0e0e0;
+  height: 300px;
+  background: url(https://w3collective.com/wp-content/uploads/2021/03/skeleton-screen-animation.gif);
   border-radius: 4px;
 }
 
 .logo-cards {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

@@ -1,29 +1,30 @@
 <main class="page-content">
-  <header class="header ">
-    <h1 class="header__title"> Free Logo Maker </h1>
+  <header class="header">
+    <h1 class="header__title">Free Logo Maker</h1>
     <p class="header__paragraph">Created IQ Logo Maker combines your logo design preferences with Artificial
       Intelligence to help you create a custom logo you'll love. All it takes is a few clicks and five
       minutes.</p>
-      <form class="cta__form" (submit)="onSubmit($event)">
-        <label class="screen-reader-text" for="company_name_6632b7c17589c">
-          Start creating a logo by entering your company's name
-        </label>
-        <input class="cta__input" type="text" name="company_name" [(ngModel)]="companyName" placeholder="Enter your company name">
-        <button class="cta__button" type="submit">Let's make a logo!</button>
-      </form>
+    <form class="cta__form" (submit)="onSubmit($event)">
+      <label class="screen-reader-text" for="company_name_6632b7c17589c">
+        Start creating a logo by entering your company's name
+      </label>
+      <input class="cta__input" type="text" name="company_name" [(ngModel)]="companyName"
+        placeholder="Enter your company name">
+      <button class="cta__button" type="submit">Let's make a logo!</button>
+    </form>
 
-      <div *ngIf="loading" class="skeleton">
-        <div class="skeleton-card" *ngFor="let card of skeletonArray"></div>
+    <div *ngIf="loading" class="skeleton">
+      <div class="skeleton-card" *ngFor="let card of skeletonArray"></div>
+    </div>
+
+    <div *ngIf="logos.length > 0" class="logo-cards">
+      <div class="card" *ngFor="let logo of logos">
+        <img [src]="logo.thumbnailWeb" alt="{{ logo.text }}">
+        <p>{{ logo.text }}</p>
       </div>
-
-      <div *ngIf="logos.length > 0" class="logo-cards">
-        <div class="card" *ngFor="let logo of logos">
-          <img [src]="logo.image" alt="{{ logo.title }}">
-          <p>{{ logo.title }}</p>
-        </div>
-      </div>
-
+    </div>
   </header>
+
   <section class="alt-layout ">
     <div class="alt-layout__section "> <img width="640" height="504"
         src="https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-1024x806.webp"
