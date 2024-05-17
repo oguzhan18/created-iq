@@ -1,0 +1,33 @@
+.skeleton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skeleton-card {
+  width: 30%;
+  height: 150px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.logo-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}

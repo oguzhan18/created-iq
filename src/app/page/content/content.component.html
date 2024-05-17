@@ -1,0 +1,226 @@
+<main class="page-content">
+  <header class="header ">
+    <h1 class="header__title"> Free Logo Maker </h1>
+    <p class="header__paragraph">Created IQ Logo Maker combines your logo design preferences with Artificial
+      Intelligence to help you create a custom logo you'll love. All it takes is a few clicks and five
+      minutes.</p>
+      <form class="cta__form" (submit)="onSubmit($event)">
+        <label class="screen-reader-text" for="company_name_6632b7c17589c">
+          Start creating a logo by entering your company's name
+        </label>
+        <input class="cta__input" type="text" name="company_name" [(ngModel)]="companyName" placeholder="Enter your company name">
+        <button class="cta__button" type="submit">Let's make a logo!</button>
+      </form>
+
+      <div *ngIf="loading" class="skeleton">
+        <div class="skeleton-card" *ngFor="let card of skeletonArray"></div>
+      </div>
+
+      <div *ngIf="logos.length > 0" class="logo-cards">
+        <div class="card" *ngFor="let logo of logos">
+          <img [src]="logo.image" alt="{{ logo.title }}">
+          <p>{{ logo.title }}</p>
+        </div>
+      </div>
+
+  </header>
+  <section class="alt-layout ">
+    <div class="alt-layout__section "> <img width="640" height="504"
+        src="https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-1024x806.webp"
+        class="attachment-large size-large lozad" alt="Logo style selection screen" decoding="async"
+        fetchpriority="high"
+        srcset="https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-1024x806.webp 1024w, https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-600x473.webp 600w, https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-768x605.webp 768w, https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-350x276.webp 350w, https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still.webp 1224w"
+        sizes="(minwidth 1000px) 50vw, 75vw"
+        data-src="https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-1024x806.webp"
+        data-srcset="https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-1024x806.webp 1024w, https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-600x473.webp 600w, https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-768x605.webp 768w, https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still-350x276.webp 350w, https://cdn.logojoy.com/wp-content/uploads/20231221095829/Surge-Select-Still.webp 1224w"
+        data-loaded="true">
+      <div class="alt-layout__content">
+        <h2>Our logo maker is easy</h2>
+        <p>Start by entering your company name and industry, then select the perfect logo styles, colors,
+          and symbols that you like the best. Created IQ Logo Maker will use these as inspiration and start to
+          generate custom logo designs.</p>
+      </div>
+    </div>
+    <div class="alt-layout__section "> <img width="640" height="482"
+        src="https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-1024x771.webp"
+        class="attachment-large size-large lozad" alt="Logo color selection screen" decoding="async"
+        srcset="https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-1024x771.webp 1024w, https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-600x452.webp 600w, https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-768x578.webp 768w, https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-350x263.webp 350w, https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still.webp 1254w"
+        sizes="(minwidth 1000px) 50vw, 75vw"
+        data-src="https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-1024x771.webp"
+        data-srcset="https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-1024x771.webp 1024w, https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-600x452.webp 600w, https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-768x578.webp 768w, https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still-350x263.webp 350w, https://cdn.logojoy.com/wp-content/uploads/20231221095827/Surge-Color-Still.webp 1254w"
+        data-loaded="true">
+      <div class="alt-layout__content">
+        <h2> Our logo maker is fun</h2>
+        <p>Finalize your colors, fonts, and layouts in our easy-to-use logo editor to make sure you get
+          exactly what you want. Undo any edits you make and then click Save when you’ve created your
+          perfect logo design.</p>
+      </div>
+    </div>
+  </section>
+  <section class="rich-text margin__bottom--medium">
+    <h2 style="text-align: center;">Created IQ has been featured on the news</h2>
+  </section>
+  <section class="press-bar ">
+    <ul class="press-bar__list">
+      <li class="press-bar__logo"> <img width="135" height="20"
+          src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17160942/techCrunch.png"
+          class="attachment-small size-small lozad" alt="" decoding="async" loading="lazy"
+          data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17160942/techCrunch.png" data-srcset="" srcset=""
+          data-loaded="true"> </li>
+      <li class="press-bar__logo"> <img width="89" height="31"
+          src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17160942/techCrunch.png"
+          class="attachment-small size-small lozad" alt="Black Google wordmark logo design." decoding="async"
+          loading="lazy" data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17160950/google.png"
+          data-srcset="" srcset="" data-loaded="true"> </li>
+      <li class="press-bar__logo"> <img width="168" height="20"
+          src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17160942/techCrunch.png"
+          class="attachment-small size-small lozad" alt="" decoding="async" loading="lazy"
+          data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/21104358/huffpost.png" data-srcset="" srcset=""
+          data-loaded="true"> </li>
+      <li class="press-bar__logo"> <img width="95" height="26"
+          src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17160942/techCrunch.png"
+          class="attachment-small size-small lozad" alt="" decoding="async" loading="lazy"
+          data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17161004/Forbes.png" data-srcset="" srcset=""
+          data-loaded="true"> </li>
+      <li class="press-bar__logo"> <img width="190" height="20"
+          src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17160942/techCrunch.png"
+          class="attachment-small size-small lozad" alt="" decoding="async" loading="lazy"
+          data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/17161031/globe-and-mail.png" data-srcset=""
+          srcset="" data-loaded="true"> </li>
+    </ul>
+  </section>
+  <section class="icon-grid ">
+    <div class="icon-grid__headline">
+      <h2>A logo creator that gives you everything a logo designer would</h2>
+    </div>
+    <div class="icon-grid__inner icon-grid__inner--centered icon-grid__inner--3-col">
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="120" height="120"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141836/ic_image.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="image icon" decoding="async" loading="lazy"
+            data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141836/ic_image.svg" data-srcset="" srcset=""
+            data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>1. High-res logos</h3>
+          <p>Crisp, hi-res PNG and JPG logo files for use online or offline.</p>
+        </div>
+      </div>
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="120" height="120"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141838/ic_pen_tool.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="pen tool icon" decoding="async" loading="lazy"
+            data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141838/ic_pen_tool.svg" data-srcset=""
+            srcset="" data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>2. Vector files</h3>
+          <p>SVG and EPS logo files that let you scale your new logo to any size. Perfect for printing!
+          </p>
+        </div>
+      </div>
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="72" height="72"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14162409/ic_shirt.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="shirt icon" decoding="async" loading="lazy"
+            data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14162409/ic_shirt.svg" data-srcset="" srcset=""
+            data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>3. Color variations</h3>
+          <p>Get black and white, colored, and transparent background variations of your logo.</p>
+        </div>
+      </div>
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="72" height="72"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14162408/ic_bc.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="bc icon" decoding="async" loading="lazy"
+            data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14162408/ic_bc.svg" data-srcset="" srcset=""
+            data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>4. Business card designs</h3>
+          <p><span style="font-weight: 400;">C</span><span style="font-weight: 400;">hoose from 20
+              professional and easy-to-customize business card designs.</span></p>
+        </div>
+      </div>
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="72" height="72"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14162410/ic_social.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="social icon" decoding="async" loading="lazy"
+            data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14162410/ic_social.svg" data-srcset=""
+            srcset="" data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>5. Social media templates</h3>
+          <p><span style="font-weight: 400;">Design perfectly-sized profiles and posts for Facebook,
+              Twitter, YouTube, and more.</span></p>
+        </div>
+      </div>
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="72" height="72"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141832/ic_file.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="file icon" decoding="async" loading="lazy"
+            data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141832/ic_file.svg" data-srcset="" srcset=""
+            data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>6. Brand info</h3>
+          <p>A one-page resource with your logo fonts and colors. Consistency for the win!</p>
+        </div>
+      </div>
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="120" height="120"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141841/ic_resize.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="resize icon" decoding="async" loading="lazy"
+            data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141841/ic_resize.svg" data-srcset=""
+            srcset="" data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>7. Post-purchase changes</h3>
+          <p><span style="font-weight: 400;">Make unlimited changes to your logo when you subscribe to
+              Created IQ’s Brand Kit.&nbsp;</span></p>
+        </div>
+      </div>
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="120" height="120"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141839/ic_phone.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="Icon of a blue telephone" decoding="async"
+            loading="lazy" data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141839/ic_phone.svg"
+            data-srcset="" srcset="" data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>8. Lifetime logo support</h3>
+          <p>Our team is here if you need help opening files, tweaking your designs, or getting started.
+          </p>
+        </div>
+      </div>
+      <div class="icon-grid__item">
+        <div class="icon-grid__item__img-wrapper"> <img width="120" height="120"
+            src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141829/ic_copy.svg"
+            class="attachment-thumbnail size-thumbnail lozad" alt="copy icon" decoding="async" loading="lazy"
+            data-src="https://cdn.logojoy.com/wp-content/uploads/2018/12/14141829/ic_copy.svg" data-srcset="" srcset=""
+            data-loaded="true"> </div>
+        <div class="icon-grid__content">
+          <h3>9. Royalty-free logos</h3>
+          <p>Use your downloaded logo files for any commercial or non-commercial purpose.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <h2 class="video-player__headline">How to use Created IQ's free logo creator</h2><a class="video__toggle" href="#"
+    data-video-trigger="" title="Open video: Video demo of Looka Logo Maker">
+    <div class="video__button"> <img data-src="https://looka.com/wp-content/themes/looka/images/icons/ic_play.svg"
+        alt="" class="lozad" src="https://looka.com/wp-content/themes/looka/images/icons/ic_play.svg"
+        data-loaded="true"> </div>
+    <div class="video__bg-image "> <img width="1920" height="1080"
+        src="https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed.webp"
+        class="attachment-full size-full lozad" alt="" decoding="async" loading="lazy"
+        srcset="https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed.webp 1920w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-600x338.webp 600w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-1024x576.webp 1024w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-768x432.webp 768w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-1536x864.webp 1536w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-350x197.webp 350w"
+        sizes="(minwidth 1000px) 50vw, 75vw"
+        data-src="https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed.webp"
+        data-srcset="https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed.webp 1920w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-600x338.webp 600w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-1024x576.webp 1024w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-768x432.webp 768w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-1536x864.webp 1536w, https://cdn.logojoy.com/wp-content/uploads/20231221100428/Looka_Explainer_Image_Compressed-350x197.webp 350w"
+        data-loaded="true"> </div>
+  </a>
+  <section class="video " id="video-TfzBl6of-jo"> <a href="#" class="video__close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" d="M.35.35l19 19M19.35.35l-19 19">
+        </path>
+      </svg> </a>
+    <div class="video__container">
+      <div class="video__iframe" data-videoid="TfzBl6of-jo"></div>
+    </div>
+  </section>
+</main>
