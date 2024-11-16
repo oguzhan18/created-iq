@@ -12,7 +12,7 @@ export class LogoService {
   constructor(private http: HttpClient) { }
 
   generateLogo(companyName: string): Observable<any> {
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const proxyUrl = 'https://cors-anywhere-master.onrender.com/';
     const targetUrl = 'https://business-name-backend.vercel.app/business-name';
     const headers = new HttpHeaders({
       'Cache-Control': 'no-cache',
